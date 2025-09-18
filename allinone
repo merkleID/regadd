@@ -1,0 +1,3 @@
+reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /f
+reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v RDVDenyWriteAccess /t REG_DWORD /d 0 /f
+gpupdate /force
