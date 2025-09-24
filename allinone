@@ -1,4 +1,21 @@
 reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /f
 reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v RDVDenyWriteAccess /t REG_DWORD /d 0 /f
 gpupdate /force
-Packages/BSTWIN/0/setupdownloader_[aHR0cHM6Ly9jbG91ZGd6LWVjcy5ncmF2aXR5em9uZS5iaXRkZWZlbmRlci5jb20vUGFja2FnZXMvQlNUV0lOLzAvZjJ0ZmdpL2luc3RhbGxlci54bWw-bGFuZz1lbi1VUw==].exe#?cid=emm|b|pero|gz-emails
+
+# Debian Trixie - Repository ufficiali
+
+# Pacchetti principali
+deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware
+deb-src http://deb.debian.org/debian trixie main contrib non-free non-free-firmware
+
+# Aggiornamenti di sicurezza
+deb http://security.debian.org/debian-security trixie-security main contrib non-free non-free-firmware
+deb-src http://security.debian.org/debian-security trixie-security main contrib non-free non-free-firmware
+
+# Aggiornamenti (point release + stable-updates)
+deb http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware
+deb-src http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware
+
+# Backports (pacchetti più recenti ma non sempre stabili)
+deb http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware
+deb-src http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware
